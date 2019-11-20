@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Idea = props => {
 
     let { idea, editIdea, removeIdea } = props;

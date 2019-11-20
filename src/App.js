@@ -132,7 +132,7 @@ const App = () => {
     const sortIdeas = (direction, key) => {
 
         const sortedIdeas = [...ideas];
-
+        
         switch (key) {
             case 'title':
                 sortedIdeas.sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
@@ -159,7 +159,7 @@ const App = () => {
     }
 
     return (
-        <React.Fragment>
+        <>
             <Header pageTitle={pageTitle} sortDirection={sortDirection} sortIdeas={sortIdeas} />
             <Notification notificationMessage={notificationMessage} closeNotification={closeNotification} />
             <section className="card-container">
@@ -175,7 +175,7 @@ const App = () => {
                     <Idea idea={idea} key={idea.id} removeIdea={removeIdea} editIdea={editIdea} />
                 ))}
             </section>
-        </React.Fragment>
+        </>
     );
 
 }

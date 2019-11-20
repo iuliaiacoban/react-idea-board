@@ -6,7 +6,7 @@ const Notification = props => {
     let { notificationMessage, closeNotification } = props;
 
     return (
-        <React.Fragment>
+        <>
             {notificationMessage &&
 
                 <article className='notification'>
@@ -18,7 +18,7 @@ const Notification = props => {
                     </div>
                 </article>
             }
-        </React.Fragment>
+        </>
     );
 }
 

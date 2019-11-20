@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const IdeaForm = props => {
 
     let { value, action, onChange, saveIdea } = props;
