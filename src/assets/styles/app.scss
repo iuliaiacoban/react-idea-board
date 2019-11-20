@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+@import 'variables';
+@import 'header';
+@import 'card';
+@import 'notification';
+
+body {
+    font-family: "Questrial", Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    color: $white;
+    margin: 0;
+    padding: 0;
+}

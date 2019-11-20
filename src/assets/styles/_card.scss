@@ -1,0 +1,92 @@
+.card-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+  text-align: left;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 8px;
+  box-shadow: 0 0 30px 2px rgba(183, 183, 183, .2);
+  align-content: space-between;
+  backdrop-filter: blur(4px);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  &__actions {
+    padding: 20px;
+    border-top: 1px solid $grey;
+  }
+
+  &__info {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+input[type='text'], textarea {
+  background: rgba(0, 0, 0, .3);
+  border: 1px solid rgba(255, 255, 255, .5);
+  color: $white;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: .25rem 0;
+  border-radius: .25rem;
+  padding: .75rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  border: none;
+    border-radius: .25rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $white;
+    color: #263648;
+    padding: .75rem 1rem;
+    margin-right: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+}
